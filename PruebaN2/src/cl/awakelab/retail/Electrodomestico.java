@@ -1,8 +1,10 @@
 package cl.awakelab.retail;
 
 /**
- * Super-clase, todos sus atributos se heredan a las sub-clases y posee el metodo para calcular el 
- * precio final de un objeto, el cual se sobrescribira en las sub-clases. 
+ * Super-clase, todos sus atributos se heredan a las sub-clases y posee el
+ * metodo para calcular el precio final de un objeto, el cual se sobrescribira
+ * en las sub-clases.
+ * 
  * @author Diego Pizarro
  *
  */
@@ -21,34 +23,16 @@ public class Electrodomestico {
     // CONSTANTES
     // ---------------------------------------------------------------------------------------------
 
-    /**
-     * Biblioteca de valores char correspondientes a los tipos de consumo energetico
-     */
+    // Biblioteca de valores char correspondientes a los tipos de consumo energetico
     protected char tipoConsumoEnergetico[] = { 'A', 'B', 'C', 'D', 'E', 'F' };
 
-    /**
-     * Biblioteca de Strings de colores disponibles para un Electrodomestico
-     */
+    // Biblioteca de Strings de colores disponibles para un Electrodomestico
     protected String coloresDisponibles[] = { "BLANCO", "NEGRO", "ROJO", "ROJO", "AZUL", "GRIS" };
 
-    /**
-     * Valor por defecto de precio base de un objeto Electrodomestico y de sus
-     * clases hijas
-     */
+    // Valores por defecto atributos objeto Electrodomestico y para sus clases hijas
     private final float PRECIO_BASE_DEFECTO = 100000;
-    /**
-     * Valor por defecto de color de un objeto Electrodomestico y de sus clases
-     * hijas
-     */
     private final String COLOR_DEFECTO = coloresDisponibles[0];
-    /**
-     * Valor por defecto de peso de un objeto Electrodomestico y de sus clases hijas
-     */
     private final float PESO_DEFECTO = 5;
-    /**
-     * Valor por defecto de consumo energetico de un objeto Electrodomestico y de
-     * sus clases hijas
-     */
     private final char CONSUMO_ENERGETICO_DEFECTO = tipoConsumoEnergetico[5];
 
     // ---------------------------------------------------------------------------------------------

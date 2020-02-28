@@ -1,6 +1,9 @@
 package cl.awakelab.retail;
+
 /**
- * Sub-clase de Electrodomestico, posee dos atributos propios y sobrescribe el metodo precioFinal()
+ * Sub-clase de Electrodomestico, posee dos atributos propios y sobrescribe el
+ * metodo precioFinal()
+ * 
  * @author Diego Pizarro
  *
  */
@@ -18,14 +21,11 @@ public class Televisor extends Electrodomestico {
     // CONSTANTES
     // ---------------------------------------------------------------------------------------------
 
-    /**
-     * Valor por defecto de la resolucion de un objeto Televisor
-     */
+    // Valores por defecto de la resolucion de un objeto Televisor, y de la presencia
+    // o no de un sint. TDT
+
     private final float RESOLUCION_DEFECTO = 20;
 
-    /**
-     * Valor por defecto de la presencia o no de un sint. TDT de un objeto Televisor
-     */
     private final boolean SINTONIZADOR_TDT_DEFECTO = false;
 
     // ---------------------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ public class Televisor extends Electrodomestico {
      * sintonizadorTDT
      * 
      * @param precioBase, atributo
-     * @param peso, atributo
+     * @param peso,       atributo
      */
     public Televisor(float precioBase, float peso) {
         super(precioBase, peso);
@@ -60,12 +60,12 @@ public class Televisor extends Electrodomestico {
      * Tercer constructor de objetos tipo Lavadora, sin atributos con valores por
      * defecto.
      * 
-     * @param precioBase, atributo
-     * @param color, atributo
+     * @param precioBase,        atributo
+     * @param color,             atributo
      * @param consumoEnergetico, atributo
-     * @param peso, atributo
-     * @param resolucion, atributo
-     * @param sintonizadorTDT, atributo 
+     * @param peso,              atributo
+     * @param resolucion,        atributo
+     * @param sintonizadorTDT,   atributo
      */
     public Televisor(float precioBase, String color, char consumoEnergetico, float peso, float resolucion,
             boolean sintonizadorTDT) {

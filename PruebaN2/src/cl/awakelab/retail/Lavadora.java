@@ -1,7 +1,9 @@
 package cl.awakelab.retail;
 
 /**
- * Sub-clase de Electrodomestico, posee un atributo propio y sobrescribe el metodo precioFinal()
+ * Sub-clase de Electrodomestico, posee un atributo propio y sobrescribe el
+ * metodo precioFinal()
+ * 
  * @author Diego Pizarro
  *
  */
@@ -18,9 +20,7 @@ public class Lavadora extends Electrodomestico {
     // CONSTANTES
     // ---------------------------------------------------------------------------------------------
 
-    /**
-     * Valor por defecto de la carga de un objeto Lavadora
-     */
+    // Valor por defecto de la carga de un objeto Lavadora
     private final float CARGA_DEFECTO = 5;
 
     // ---------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ public class Lavadora extends Electrodomestico {
      * consumo energetico por defecto, y utiliza valor cte. de carga
      * 
      * @param precioBase, atributo
-     * @param peso, atributo 
+     * @param peso,       atributo
      */
     public Lavadora(float precioBase, float peso) {
         super(precioBase, peso);
@@ -52,11 +52,11 @@ public class Lavadora extends Electrodomestico {
      * Tercer constructor de objetos tipo Lavadora, sin atributos con valores por
      * defecto.
      * 
-     * @param precioBase, atributo
-     * @param color, atributo
+     * @param precioBase,        atributo
+     * @param color,             atributo
      * @param consumoEnergetico, atributo
-     * @param peso, atributo
-     * @param carga, atributo 
+     * @param peso,              atributo
+     * @param carga,             atributo
      */
     public Lavadora(float precioBase, String color, char consumoEnergetico, float peso, float carga) {
         super(precioBase, color, consumoEnergetico, peso);
