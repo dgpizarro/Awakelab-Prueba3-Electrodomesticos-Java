@@ -23,13 +23,13 @@ public class Electrodomestico {
     // CONSTANTES
     // ---------------------------------------------------------------------------------------------
 
-    // Biblioteca de valores char correspondientes a los tipos de consumo energetico.
+    // Biblioteca de valores char correspondientes a los tipos de consumo energetico
     protected char tipoConsumoEnergetico[] = { 'A', 'B', 'C', 'D', 'E', 'F' };
 
-    // Biblioteca de Strings de colores disponibles para un Electrodomestico.
+    // Biblioteca de Strings de colores disponibles para un Electrodomestico
     protected String coloresDisponibles[] = { "BLANCO", "NEGRO", "ROJO", "ROJO", "AZUL", "GRIS" };
 
-    // Valores por defecto atributos objeto Electrodomestico y para sus clases hijas.
+    // Valores por defecto atributos objeto Electrodomestico y para sus clases hijas
     private final float PRECIO_BASE_DEFECTO = 100000;
     private final String COLOR_DEFECTO = coloresDisponibles[0];
     private final float PESO_DEFECTO = 5;

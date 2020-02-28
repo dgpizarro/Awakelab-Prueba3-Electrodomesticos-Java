@@ -22,7 +22,7 @@ public class Televisor extends Electrodomestico {
     // ---------------------------------------------------------------------------------------------
 
     // Valores por defecto de la resolucion de un objeto Televisor, y de la presencia
-    // o no de un sint. TDT
+    // o no de un sint. TDT.
 
     private final float RESOLUCION_DEFECTO = 20;
 
