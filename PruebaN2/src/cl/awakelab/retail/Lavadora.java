@@ -20,7 +20,7 @@ public class Lavadora extends Electrodomestico {
     // CONSTANTES
     // ---------------------------------------------------------------------------------------------
 
-    // Valor por defecto de la carga de un objeto Lavadora
+    // Valor por defecto de la carga de un objeto Lavadora.
     private final float CARGA_DEFECTO = 5;
 
     // ---------------------------------------------------------------------------------------------
