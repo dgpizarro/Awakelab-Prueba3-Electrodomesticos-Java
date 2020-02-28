@@ -29,7 +29,7 @@ public class Televisor extends Electrodomestico {
 
     /**
      * Cosntructor por defecto de objetos tipo Televisor, con atributos definidos en
-     * constantes
+     * constantes heredadas y propias de esta clase.
      */
     public Televisor() {
         super();
@@ -42,8 +42,8 @@ public class Televisor extends Electrodomestico {
      * consumo energetico por defecto, y utiliza valor cte. de resolucion y
      * sintonizadorTDT
      * 
-     * @param precioBase
-     * @param peso
+     * @param precioBase, atributo
+     * @param peso, atributo
      */
     public Televisor(float precioBase, float peso) {
         super(precioBase, peso);
@@ -55,12 +55,12 @@ public class Televisor extends Electrodomestico {
      * Tercer constructor de objetos tipo Lavadora, sin atributos con valores por
      * defecto.
      * 
-     * @param precioBase
-     * @param color
-     * @param consumoEnergetico
-     * @param peso
-     * @param resolucion
-     * @param sintonizadorTDT
+     * @param precioBase, atributo
+     * @param color, atributo
+     * @param consumoEnergetico, atributo
+     * @param peso, atributo
+     * @param resolucion, atributo
+     * @param sintonizadorTDT, atributo 
      */
     public Televisor(float precioBase, String color, char consumoEnergetico, float peso, float resolucion,
             boolean sintonizadorTDT) {

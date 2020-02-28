@@ -23,7 +23,7 @@ public class Lavadora extends Electrodomestico {
 
     /**
      * Cosntructor por defecto de objetos tipo Lavadora, con atributos definidos en
-     * constantes
+     * constantes y heredados de clase super().
      */
     public Lavadora() {
         super();
@@ -34,8 +34,8 @@ public class Lavadora extends Electrodomestico {
      * Segundo constructor de objetos tipo Lavadora, hereda valores de color y
      * consumo energetico por defecto, y utiliza valor cte. de carga
      * 
-     * @param precioBase
-     * @param peso
+     * @param precioBase, atributo
+     * @param peso, atributo 
      */
     public Lavadora(float precioBase, float peso) {
         super(precioBase, peso);
@@ -46,11 +46,11 @@ public class Lavadora extends Electrodomestico {
      * Tercer constructor de objetos tipo Lavadora, sin atributos con valores por
      * defecto.
      * 
-     * @param precioBase
-     * @param color
-     * @param consumoEnergetico
-     * @param peso
-     * @param carga
+     * @param precioBase, atributo
+     * @param color, atributo
+     * @param consumoEnergetico, atributo
+     * @param peso, atributo
+     * @param carga, atributo 
      */
     public Lavadora(float precioBase, String color, char consumoEnergetico, float peso, float carga) {
         super(precioBase, color, consumoEnergetico, peso);

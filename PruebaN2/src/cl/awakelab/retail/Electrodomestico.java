@@ -26,11 +26,20 @@ public class Electrodomestico {
     protected String coloresDisponibles[] = { "BLANCO", "NEGRO", "ROJO", "ROJO", "AZUL", "GRIS" };
 
     /**
-     * Valores por defecto de 1 Electrodomestico
+     * Valor por defecto de precio base de un objeto Electrodomestico y de sus clases hijas
      */
     private final float PRECIO_BASE_DEFECTO = 100000;
+    /**
+     * Valor por defecto de color de un objeto Electrodomestico y de sus clases hijas
+     */
     private final String COLOR_DEFECTO = coloresDisponibles[0];
+    /**
+     * Valor por defecto de peso de un objeto Electrodomestico y de sus clases hijas
+     */
     private final float PESO_DEFECTO = 5;
+    /**
+     * Valor por defecto de consumo energetico de un objeto Electrodomestico y de sus clases hijas
+     */
     private final char CONSUMO_ENERGETICO_DEFECTO = tipoConsumoEnergetico[5];
 
     // ---------------------------------------------------------------------------------------------
@@ -70,8 +79,8 @@ public class Electrodomestico {
      */
     public Electrodomestico(float precioBase, String color, char consumoEnergetico, float peso) {
         this.precioBase = precioBase;
-        comprobarColor(color);
-        comprobarConsumoEnergetico(consumoEnergetico);
+        this.color = comprobarColor(color);
+        this.consumoEnergetico = comprobarConsumoEnergetico(consumoEnergetico);
         this.peso = peso;
     }
 
@@ -109,7 +118,7 @@ public class Electrodomestico {
     /**
      * Metodo para obtener el peso de un objeto tipo Electrodomestico
      * 
-     * @return un valor float del peso base de un objeto
+     * @return un valor float del peso de un objeto
      */
     public float getPeso() {
         return peso;
@@ -126,14 +135,17 @@ public class Electrodomestico {
      * Electrodomestico.
      * 
      * @param letra sin validar
+     * @return letra validada de consumo energetico
      */
-    private void comprobarConsumoEnergetico(char letra) {
+    private char comprobarConsumoEnergetico(char letra) {
+        char consumo = CONSUMO_ENERGETICO_DEFECTO;
+        
         for (char c : tipoConsumoEnergetico) {
             if (Character.toUpperCase(letra) == c)
-                this.consumoEnergetico = Character.toUpperCase(letra);
-            else
-                this.consumoEnergetico = CONSUMO_ENERGETICO_DEFECTO;
-        }
+                consumo = Character.toUpperCase(letra);
+            }
+        
+        return consumo;
     }
 
     /**
@@ -142,16 +154,17 @@ public class Electrodomestico {
      * MAYUS o MINUS, para asignarselo a un objeto Electrodomestico.
      * 
      * @param color sin validar
+     * @return color de objeto validado
      */
-    private void comprobarColor(String color) {
-
+    private String comprobarColor(String color) {
+        String colorValidado = COLOR_DEFECTO;
+        
         for (String string : coloresDisponibles) {
             if (color.equalsIgnoreCase(string))
-                this.color = string;
-            else
-                this.color = COLOR_DEFECTO;
-        }
-
+                colorValidado = string;
+           }
+        
+        return colorValidado;
     }
 
     /**
