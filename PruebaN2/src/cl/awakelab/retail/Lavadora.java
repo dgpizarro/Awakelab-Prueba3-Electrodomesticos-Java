@@ -1,5 +1,11 @@
 package cl.awakelab.retail;
 
+/**
+ * Sub-clase de Electrodomestico, posee un atributo propio y sobrescribe el metodo precioFinal()
+ * @author Diego Pizarro
+ *
+ */
+
 public class Lavadora extends Electrodomestico {
 
     // ---------------------------------------------------------------------------------------------

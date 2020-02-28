@@ -1,5 +1,11 @@
 package cl.awakelab.retail;
 
+/**
+ * Super-clase, todos sus atributos se heredan a las sub-clases y posee el metodo para calcular el 
+ * precio final de un objeto, el cual se sobrescribira en las sub-clases. 
+ * @author Diego Pizarro
+ *
+ */
 public class Electrodomestico {
 
     // ---------------------------------------------------------------------------------------------
@@ -26,11 +32,13 @@ public class Electrodomestico {
     protected String coloresDisponibles[] = { "BLANCO", "NEGRO", "ROJO", "ROJO", "AZUL", "GRIS" };
 
     /**
-     * Valor por defecto de precio base de un objeto Electrodomestico y de sus clases hijas
+     * Valor por defecto de precio base de un objeto Electrodomestico y de sus
+     * clases hijas
      */
     private final float PRECIO_BASE_DEFECTO = 100000;
     /**
-     * Valor por defecto de color de un objeto Electrodomestico y de sus clases hijas
+     * Valor por defecto de color de un objeto Electrodomestico y de sus clases
+     * hijas
      */
     private final String COLOR_DEFECTO = coloresDisponibles[0];
     /**
@@ -38,7 +46,8 @@ public class Electrodomestico {
      */
     private final float PESO_DEFECTO = 5;
     /**
-     * Valor por defecto de consumo energetico de un objeto Electrodomestico y de sus clases hijas
+     * Valor por defecto de consumo energetico de un objeto Electrodomestico y de
+     * sus clases hijas
      */
     private final char CONSUMO_ENERGETICO_DEFECTO = tipoConsumoEnergetico[5];
 
@@ -139,12 +148,12 @@ public class Electrodomestico {
      */
     private char comprobarConsumoEnergetico(char letra) {
         char consumo = CONSUMO_ENERGETICO_DEFECTO;
-        
+
         for (char c : tipoConsumoEnergetico) {
             if (Character.toUpperCase(letra) == c)
                 consumo = Character.toUpperCase(letra);
-            }
-        
+        }
+
         return consumo;
     }
 
@@ -158,12 +167,12 @@ public class Electrodomestico {
      */
     private String comprobarColor(String color) {
         String colorValidado = COLOR_DEFECTO;
-        
+
         for (String string : coloresDisponibles) {
             if (color.equalsIgnoreCase(string))
                 colorValidado = string;
-           }
-        
+        }
+
         return colorValidado;
     }
 
@@ -171,8 +180,7 @@ public class Electrodomestico {
      * Metodo que calcula precio final de un objeto Electrodomestico en base a su
      * tipo de consumo energetico y de su rango de peso o tamano.
      * 
-     * @param Objeto de clase Electrodomestico o de sus clases hijas
-     * 
+     * @param e, Objeto de clase Electrodomestico o de sus clases hijas
      * @return valor float de precio final
      */
     public float precioFinal(Electrodomestico e) {

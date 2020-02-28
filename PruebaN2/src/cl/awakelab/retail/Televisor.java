@@ -1,4 +1,9 @@
 package cl.awakelab.retail;
+/**
+ * Sub-clase de Electrodomestico, posee dos atributos propios y sobrescribe el metodo precioFinal()
+ * @author Diego Pizarro
+ *
+ */
 
 public class Televisor extends Electrodomestico {
 

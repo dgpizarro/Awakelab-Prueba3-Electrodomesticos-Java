@@ -1,5 +1,13 @@
 package cl.awakelab.retail;
 
+/**
+ * Clase ejecutable en la que se crea un arreglo con todos los tipos de
+ * electrodomesticos y se muestra por pantalla su precio final resultante y el
+ * precio total por cada tipo de Clase.
+ * 
+ * @author Diego Pizarro
+ *
+ */
 public class Ejecutable {
 
     public static void main(String[] args) {
